@@ -1,0 +1,73 @@
+/* Цвет основного текста #757575 */
+/* Цвет заголовка  #212121 */
+/* белый #FFFFFF */
+/* background наша команда #F5F4FA */
+/* Акцент #2196F3 */
+/* Цвет в футере мейла и телефона rgba(255, 255, 255, 0.6) */
+/* background #2F303A героя и подвала */
+/* черный в логотипе #000000  */
+
+
+/* Уникальный контент страницы */
+/* hero */
+.hero{
+  background-color: #2F303A;
+}
+.hero-title{
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button{
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* section */
+.section-title{
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Преимущества */
+.feature-list .title{
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Примеры работ */
+/* Команда */
+.team{
+  background-color: #F5F4FA;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-list .title{
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-list > li{
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}

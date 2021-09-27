@@ -1,0 +1,36 @@
+/* button */
+.button {
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+/* Перечень работ студии */
+.studio-works-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.studio-works-title {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.studio-works-box {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
