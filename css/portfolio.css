@@ -9,13 +9,22 @@
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
+/* filter-list */
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+}
 /* Перечень работ студии */
+.studio-works {
+}
 .studio-works-text {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -32,5 +41,13 @@
 }
 .studio-works-box {
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+.studio-works-box .third {
+  margin-right: 0px;
+}
+.studio-works-box .lower {
+  margin-bottom: 0px;
 }

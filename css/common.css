@@ -7,10 +7,30 @@
 /* background #2F303A героя и подвала */
 /* черный в логотипе #000000  */
 :root {
-  --primary-text-color:#757575;
-  --title-text-color:#212121;
-  --accent-color:#2196F3;
-  --primary-white-color:#ffffff;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+p {
+  padding: 0px;
+  margin: 0px;
 }
 .page {
   background-color: var(--primary-white-color);
@@ -19,16 +39,25 @@
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
 }
-.list{
+.list {
   list-style: none;
 }
-.link{
-  text-decoration: none; 
+.link {
+  text-decoration: none;
+  display: inline-block;
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid #ff0000;
 }
 /* Футер */
 /* Логотип компании */
-.logo{
+.logo {
   font-family: Raleway, sans-serif;
   /* font-style: normal; */
   font-weight: 700;
@@ -37,11 +66,11 @@
   letter-spacing: 0.03em;
   color: #000000;
 }
-.logo-web-header{
+.logo-web-header {
   color: var(--accent-color);
 }
 /* site-nav */
-.site-nav .link{
+.site-nav .link {
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -50,14 +79,14 @@
   letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
-.site-nav .link:focus{
+.site-nav .link:focus {
   color: var(--accent-color);
 }
-.current>.link {
+.current > .link {
   color: var(--accent-color);
 }
 /* auth-nav */
-.auth-nav .link{
+.auth-nav .link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -66,35 +95,41 @@
   color: #757575;
 }
 .auth-nav .link:hover,
-.auth-nav .link:focus{
+.auth-nav .link:focus {
   color: var(--accent-color);
 }
 /* Подвал сайта */
-.page-footer{
-  background-color: #2F303A;
+.page-footer {
+  background-color: #2f303a;
 }
 
-.logo-footer{
+.logo-footer {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
-.logo-web-footer{
+.logo-web-footer {
   color: var(--accent-color);
-  }
-.address{
+}
+.address {
   color: var(--primary-white-color);
   font-family: inherit;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
-.address > .link{
+.address > p,
+.address[href='tel:+380991111111'] {
+  margin-bottom: 9px;
+}
+.address > .link {
   color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
 }
 .address > .link:hover,
-.address > .link:focus{
+.address > .link:focus {
   color: var(--accent-color);
 }
