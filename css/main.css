@@ -10,35 +10,40 @@
 /* Уникальный контент страницы */
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
-  height: 600px;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+}
+.order-service {
+  justify-content: center;
 }
 .hero-button {
+  display: block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  align-items: center;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 200px;
 }
 /* section */
 .section {
@@ -54,9 +59,14 @@
   text-align: center;
 }
 /* Преимущества */
-.advantages {
+.feature-list {
+  display: flex;
+}
+.feature-list .item {
   width: 270px;
-  display: block;
+}
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -65,19 +75,26 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
-
-.advantages > .title {
+.item > .title {
   margin-bottom: 10px;
 }
+
 /* Примеры работ */
 .section.work {
   padding-top: 0px;
 }
-.work-pic {
+.work-list {
+  display: flex;
+}
+.work-list .item {
   display: block;
   width: 370px;
 }
-.work-pic > img {
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-list .item > img {
+  display: block;
   max-width: 100%;
 }
 /* Команда */
@@ -88,19 +105,26 @@
   text-align: center;
 }
 /* Карточка учасника команды */
-.card {
-  background-color: var(--primary-white-color);
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
+.team-list {
+  display: flex;
+}
+.team-list .item {
   display: block;
-
   width: 270px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-white-color);
+  text-align: center;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 /* "Элемент фото с карточки учасника команды */
-.card > img {
-  max-width: 100%;
+.team-list .item > img {
+  display: block;
   margin-bottom: 30px;
+  max-width: 100%;
 }
 /* Заголовок в карточке учасника команды */
 .team-list .title {

@@ -41,29 +41,59 @@ p {
   text-decoration: none;
 }
 .container {
-  margin: 0 auto;
   width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid #ff0000;
 }
+.row {
+  display: flex;
+  align-items: center;
+}
 /* Футер */
+.main-head {
+  display: flex;
+  /* justify-content: space-between; 
+  можно или то или то, работает в обоих случаях (?спросить ментора)
+  .auth-nav {
+  margin-left: auto;
+  */
+  align-items: center;
+}
 /* Логотип компании */
 .logo {
+  margin-right: 93px;
+  color: #000000;
   font-family: Raleway, sans-serif;
   /* font-style: normal; */
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
 }
 .logo-web-header {
   color: var(--accent-color);
 }
 /* site-nav */
+.site-nav {
+  display: flex;
+}
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+/* Все, после(кроме) первого получат свойство марджин
+.site-nav .link + .link{
+  margin-left: 50px;
+} 
+*/
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -74,37 +104,51 @@ p {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.current > .link {
+.active.link {
   color: var(--accent-color);
 }
 /* auth-nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+
 /* Подвал сайта */
 .page-footer {
-  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: #2f303a;
 }
 
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--primary-white-color);
-  display: block;
-  margin-bottom: 20px;
 }
 .logo-web-footer {
   color: var(--accent-color);
