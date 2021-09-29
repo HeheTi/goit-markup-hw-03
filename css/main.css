@@ -54,6 +54,10 @@
   text-align: center;
 }
 /* Преимущества */
+.advantages {
+  width: 270px;
+  display: block;
+}
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -61,9 +65,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
-.advantages {
-  width: 270px;
-}
+
 .advantages > .title {
   margin-bottom: 10px;
 }
@@ -71,23 +73,40 @@
 .section.work {
   padding-top: 0px;
 }
+.work-pic {
+  display: block;
+  width: 370px;
+}
+.work-pic > img {
+  max-width: 100%;
+}
 /* Команда */
-.team {
+.section.team {
   background-color: #f5f4fa;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+/* Карточка учасника команды */
+.card {
+  background-color: var(--primary-white-color);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  display: block;
+
+  width: 270px;
+  padding-bottom: 30px;
+}
+/* "Элемент фото с карточки учасника команды */
+.card > img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+/* Заголовок в карточке учасника команды */
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-}
-.team-list > li {
-  background-color: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 10px;
 }

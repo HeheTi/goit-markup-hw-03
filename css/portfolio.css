@@ -30,7 +30,6 @@
   font-size: 16px;
   line-height: 1.87;
 }
-
 .studio-works-title {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
@@ -45,9 +44,11 @@
   margin-bottom: 30px;
   width: 370px;
 }
-.studio-works-box .third {
+/* каждый 3й с 3го, убрать отсуп для крайнего-правого на странице */
+.studio-works-box:nth-child(3n + 3) {
   margin-right: 0px;
 }
-.studio-works-box .lower {
+/* последние с 7го, крайние-нижние 3*/
+.studio-works-box:nth-child(n + 7) {
   margin-bottom: 0px;
 }
