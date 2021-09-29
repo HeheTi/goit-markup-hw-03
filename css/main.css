@@ -45,12 +45,9 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 }
+
 /* section */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 2px solid #00ff00;
-}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;

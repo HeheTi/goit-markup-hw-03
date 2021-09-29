@@ -1,5 +1,9 @@
 /* button */
 .button {
+  display: block;
+  padding: 6px 22px;
+  border: 0px;
+
   background-color: #f5f4fa;
   color: var(--title-text-color);
   font-family: inherit;
@@ -9,8 +13,6 @@
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -19,11 +21,18 @@
 }
 /* filter-list */
 .filter-list {
-  margin-bottom: 50px;
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* Перечень работ студии */
 .studio-works {
+  display: flex;
+  flex-wrap: wrap;
 }
 .studio-works-text {
   color: var(--primary-text-color);
@@ -43,6 +52,10 @@
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+}
+.studio-works-box img {
+  display: block;
+  max-width: 100%;
 }
 /* каждый 3й с 3го, убрать отсуп для крайнего-правого на странице */
 .studio-works-box:nth-child(3n + 3) {

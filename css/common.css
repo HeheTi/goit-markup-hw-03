@@ -131,7 +131,12 @@ p {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
-
+/* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid #00ff00;
+}
 /* Подвал сайта */
 .page-footer {
   padding-top: 60px;
