@@ -45,7 +45,6 @@ p {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid #ff0000;
 }
 .row {
   display: flex;
@@ -135,7 +134,6 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid #00ff00;
 }
 /* Подвал сайта */
 .page-footer {

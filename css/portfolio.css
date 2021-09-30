@@ -25,21 +25,25 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-list .item:not(:last-child) {
+.filter-list > .item:not(:last-child) {
   margin-right: 8px;
 }
 
 /* Перечень работ студии */
-.studio-works {
+.studio-works-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .studio-works-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
-.studio-works-title {
+.studio-works-list .title {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
   font-weight: 700;
@@ -47,21 +51,15 @@
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.studio-works-box {
+.studio-works-list > .item {
+  margin-left: 30px;
+  margin-top: 30px;
   border: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
+  padding-bottom: 20px;
 }
-.studio-works-box img {
+.studio-works-list > .item img {
   display: block;
+  margin-bottom: 20px;
   max-width: 100%;
-}
-/* каждый 3й с 3го, убрать отсуп для крайнего-правого на странице */
-.studio-works-box:nth-child(3n + 3) {
-  margin-right: 0px;
-}
-/* последние с 7го, крайние-нижние 3*/
-.studio-works-box:nth-child(n + 7) {
-  margin-bottom: 0px;
 }
