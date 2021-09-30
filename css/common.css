@@ -51,6 +51,9 @@ p {
   align-items: center;
 }
 /* Футер */
+.page-head {
+  border-bottom: 1px solid #ececec;
+}
 .main-head {
   display: flex;
   /* justify-content: space-between; 

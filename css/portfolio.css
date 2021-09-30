@@ -56,10 +56,16 @@
   margin-top: 30px;
   border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - 30px);
-  padding-bottom: 20px;
 }
+.card {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .studio-works-list > .item img {
   display: block;
-  margin-bottom: 20px;
   max-width: 100%;
+  height: auto;
 }
