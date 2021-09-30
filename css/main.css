@@ -55,6 +55,9 @@
   line-height: 1.17;
   text-align: center;
 }
+.section-title {
+  margin-bottom: 50px;
+}
 /* Преимущества */
 .feature-list {
   display: flex;
